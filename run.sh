@@ -8,7 +8,7 @@ do
     for i in {0..3}; 
     do  
     mkdir test/${names[$i]}
-    mkdir test/${names[$i]}/
+    mkdir test/${names[$i]}/$num
 
         for j in {0..299}; 
         do  
