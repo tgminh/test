@@ -14,7 +14,6 @@ do
         do  
             num=$(printf "%04d" $((nos[i] + j)))
             filename="8i_dataset/${names[i]}/Ply/${names[i]}_vox10_${num}.ply"
-            filename="8i_dataset/${names[$i]}/Ply/${names[$i]}_vox10_$((${no[$i]} + $j)).ply"
             output="test/${names[$i]}/$num/tile__${tile_size}_%04d.ply"
             ./bin/pcp -i $filename -o $output -t $tile_size
         done
