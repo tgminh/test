@@ -10,7 +10,7 @@ do
     mkdir test/${names[$i]}
 
 
-        for j in {1..300}; 
+        for j in {0..299}; 
         do  
             filename="8i_dataset/${names[$i]}/Ply/${names[$i]}_vox10_$((${no[$i]} + $j)).ply"
             output="test/${names[$i]}/tile_${tile_size}_%04d.ply"
